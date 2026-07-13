@@ -5,11 +5,11 @@ import { LoginPage } from './pageObjects/loginPage';
 test('user can login', async ({ page }) => {
   const login = new LoginPage(page);
 
-  // Update the URL to your application's login page
+  // Update the URL to your application's login p
   await login.goto('https://example.com/login');
 
-  // Replace with valid credentials for your app or use fixtures
-  await login.login('myUser', 'myPass');
+  // Replace with valid credentials for your app or use fixture
+  await login.login('MyUser', 'myPassword');
 
   // Adjust this assertion to match your app's post-login behavior
   await expect(page).toHaveURL('https://example.com/dashboard');
